@@ -9,9 +9,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-
 @Entity
-public class Livro implements Serializable{
+public class Livro implements Serializable {
 
 	/**
 	 * 
@@ -25,7 +24,7 @@ public class Livro implements Serializable{
 	private String texto;
 
 	@ManyToOne
-	@JoinColumn(name= "categoria_id")
+	@JoinColumn(name = "categoria_id")
 	private Categoria categoria;
 
 	public Livro() {
