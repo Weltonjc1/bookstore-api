@@ -1,0 +1,11 @@
+git add .
+git commit -m "mensagem ..."
+git push
+
+
+
+
+
+git pull
+
+https://blog.betrybe.com/git/git-pull/
