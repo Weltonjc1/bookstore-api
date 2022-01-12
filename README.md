@@ -6,13 +6,13 @@
 #Sobre o Projeto
 
 
-#Tecnologias
+#Tecnologias Utilizadas
 
-#Back End
-Java
-Spring Boot
-JPA / HIbernate
-Maven
+##Back End
+-Java
+-Spring Boot
+-JPA / HIbernate
+-Maven
 
 
 
