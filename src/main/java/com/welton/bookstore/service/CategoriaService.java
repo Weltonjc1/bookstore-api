@@ -1,5 +1,6 @@
 package com.welton.bookstore.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,4 +22,8 @@ public class CategoriaService {
 				"Objeto não encontrado! Id: " + id + "Type: " + Categoria.class.getName()));
 	}
 
+	public List<Categoria> findALL(){
+		return repository.findAll();
+	}
+	
 }
