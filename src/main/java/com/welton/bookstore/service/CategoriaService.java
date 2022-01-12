@@ -11,11 +11,14 @@ import com.welton.bookstore.repositories.CategoriaRepository;
 @Service
 public class CategoriaService {
 
-	@Autowired CategoriaRepository repository;
+	@Autowired
+	CategoriaRepository repository;
+
 	public Categoria findById(Integer id) {
-		
+
 		Optional<Categoria> obj = repository.findById(id);
-		return obj.orElse(null);
+		return obj.orElseThrow(() -> new com.welton.bookstore.service.exception.ObjectNotFoundException(
+				"Objeto não encontrado! Id: " + id + "Type: " + Categoria.class.getName()));
 	}
-	
+
 }
