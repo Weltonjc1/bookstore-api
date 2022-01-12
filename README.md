@@ -8,5 +8,11 @@
 
 #Tecnologias
 
-
 #Back End
+Java
+Spring Boot
+JPA / HIbernate
+Maven
+
+
+
