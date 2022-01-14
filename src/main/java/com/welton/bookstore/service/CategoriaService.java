@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 import com.welton.bookstore.domain.Categoria;
 import com.welton.bookstore.dtos.CategoriaDTO;
 import com.welton.bookstore.repositories.CategoriaRepository;
+import com.welton.bookstore.service.exception.DataIntegrityViolationException;
+
 
 @Service
 public class CategoriaService {
@@ -42,7 +44,13 @@ public class CategoriaService {
 
 	public void delete(Integer id) {
 		findById(id);
-		repository.deleteById(id);
+		try {
+			repository.deleteById(id);
+		} catch (org.springframework.dao.DataIntegrityViolationException e) {
+			throw new DataIntegrityViolationException("Categoria não pode ser deletada! Possui livros associados ");
+		}
+		
+		
 		
 	}
 	

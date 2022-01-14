@@ -58,6 +58,9 @@ public class CategoriaResource {
 		service.delete(id);
 		return ResponseEntity.noContent().build();
 	}
+	
+	
+	
 }
 
 //localhost:8080/categorias/1
