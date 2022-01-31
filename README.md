@@ -10,13 +10,15 @@ Aplicação full stack web contruida para treinar conhecimentos, é uma aplicaç
 
 ## Back End
 
--Java
+- Java
 
--Spring Boot
+- Spring Boot
 
--JPA / HIbernate
+- JPA / HIbernate
 
--Maven
+- Maven
+
+- Angular
 
 ## Front End
 
